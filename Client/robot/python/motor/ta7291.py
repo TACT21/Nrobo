@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 import time
 from typing import Any
 
-class PinGuide:
+class Ta7291PinGuide:
     in1 = None
     in2 = None
     pwm = None
@@ -16,7 +16,7 @@ class PinGuide:
             return False
 
 class Ta7291Single:
-	def __init__(self, pin:PinGuide):
+	def __init__(self, pin:Ta7291PinGuide):
 		if pin.checkAvailability() == False:
 			raise ValueError("the Value called pin not has apporopriate value")
 		# Set up and back up gpio pin 
@@ -53,21 +53,21 @@ class Ta7291Single:
 		GPIO.output(self.in2, 1)
 		time.sleep(0.5)
 
-	def Cleanup(self):
+	def CleanUp(self):
 		self.brake()
 		GPIO.cleanup()
 		
 class Ta7291Duo:
 	_right = None
 	_left = None
-	def __init__(self, right:PinGuide, left:PinGuide):
+	def __init__(self, right:Ta7291PinGuide, left:Ta7291PinGuide):
 		try:
 			_right = Ta7291Single(right)
 			_left = Ta7291Single(left)
 		except:
 			raise
 	
-	def forward(self, speed):
+	def Forward(self, speed):
 		_right.Drive(abs(speed))
 		_left.Drive(abs(speed))
 	
