@@ -1,10 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>RobotManager.Shared</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnitsNet" Version="5.43.0" />
+  </ItemGroup>
 
 </Project>
