@@ -17,6 +17,7 @@ namespace RobotManager.output
 
         public void Dispose()
         {
+            controller.ClosePin(ledPin);
             controller.Dispose();
         }
 
