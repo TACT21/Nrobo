@@ -6,5 +6,8 @@
         public virtual byte[] Read() {
             throw new NotImplementedException();
         }
+        public async virtual Task<byte[]> ReadAsync() {
+            throw new NotImplementedException();
+        }
     }
 }
