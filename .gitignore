@@ -396,3 +396,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# =============== #
+# Unity generated #
+# =============== #
+Client/Temp/
+Client/Obj/
+Client/UnityGenerated/
+Client/Library/
+
