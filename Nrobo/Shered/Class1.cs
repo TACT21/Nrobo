@@ -14,4 +14,19 @@
             Right = 1
         }
     }
+
+    public class DetaContainer
+    {
+        public Type Type { get; set; }
+        public string Obj { get; set; }
+        public DetaContainer(Type type,object obj) {
+            this.Type = type;
+            this.Obj = System.Text.Json.JsonSerializer.Serialize(obj,type);
+        }
+        public DetaContainer(dynamic obj)
+        {
+            this.Type = obj.GetType();
+            this.Obj = System.Text.Json.JsonSerializer.Serialize(obj,this.Type);
+        }
+    }
 }

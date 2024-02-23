@@ -8,7 +8,7 @@ namespace RobotManager.Input
     /// This is the management class for HC-SR04
     /// For tehcnical reason, this class does not operate in Windows OS.
     /// </summary>
-    public abstract class HCSR04:SensorInterface
+    public class HCSR04:SensorInterface
     {
         public readonly int TrigPin;
         public readonly int EchoPin;
