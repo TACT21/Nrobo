@@ -56,32 +56,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Numerics.Vectors.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Options.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Text.Json.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Threading.Channels.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Buffers.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Diagnostics.DiagnosticSource.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Connections.Abstractions.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Text.Encodings.Web.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Memory.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Primitives.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Logging.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Http.Connections.Client.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Runtime.CompilerServices.Unsafe.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Bcl.TimeProvider.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.DependencyInjection.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Bcl.AsyncInterfaces.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Features.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Client.Core.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Protocols.Json.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Logging.Abstractions.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.Threading.Tasks.Extensions.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Http.Connections.Common.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\System.IO.Pipelines.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Common.dll" />
-    <Analyzer Include="F:\makes\works\Nrobo\Client\Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Client.dll" />
     <Analyzer Include="F:\temp\2023.2.10f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="F:\temp\2023.2.10f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="F:\temp\2023.2.10f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -93,12 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Client.dll" />
+    <None Include="Assets\Scripts\Comunicator\ru-RU\UnitsNet.resources.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\System.Text.Json.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Http.Connections.Client.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Http.Connections.Common.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.DependencyInjection.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Bcl.TimeProvider.dll" />
+    <None Include="Assets\Scripts\Comunicator\zh-CN\UnitsNet.resources.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Logging.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Features.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Bcl.AsyncInterfaces.dll" />
@@ -107,7 +83,10 @@
     <None Include="Assets\Scripts\SignalR\Plugins\System.Threading.Tasks.Extensions.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Client.Core.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="Assets\Scripts\Comunicator\UnitsNet.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\System.Buffers.dll" />
+    <None Include="Assets\Scripts\Comunicator\Nlib.dll" />
+    <None Include="Assets\Scripts\Comunicator\nb-NO\UnitsNet.resources.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.SignalR.Protocols.Json.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\System.Threading.Channels.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.Extensions.Options.dll" />
@@ -117,6 +96,7 @@
     <None Include="Assets\Scripts\SignalR\Plugins\System.IO.Pipelines.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\System.Memory.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\System.Text.Encodings.Web.dll" />
+    <None Include="Assets\Scripts\Comunicator\fr-CA\UnitsNet.resources.dll" />
     <None Include="Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Connections.Abstractions.dll" />
   </ItemGroup>
   <ItemGroup>
@@ -660,6 +640,18 @@
       <HintPath>Assets\Scripts\SignalR\Plugins\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnitsNet.resources">
+      <HintPath>Assets\Scripts\Comunicator\ru-RU\UnitsNet.resources.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnitsNet">
+      <HintPath>Assets\Scripts\Comunicator\UnitsNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nlib">
+      <HintPath>Assets\Scripts\Comunicator\Nlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>F:\temp\2023.2.10f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
       <Private>False</Private>
@@ -1184,16 +1176,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.WebRTC.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.WebRTC.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.WebRTC.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.WebRTC.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">

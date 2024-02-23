@@ -10,13 +10,13 @@
     <Folder Include="input\" />
   </ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\Nlib\Nlib.csproj" />
+	</ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Iot.Device.Bindings" Version="3.1.0" />
     <PackageReference Include="System.Device.Gpio" Version="3.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Shered\Shared.csproj" />
   </ItemGroup>
 
 </Project>
