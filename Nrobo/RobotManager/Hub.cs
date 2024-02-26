@@ -6,6 +6,7 @@ using System.Device.I2c;
 using RobotManager.Shared;
 using System.Text.Json;
 using System.Device.Gpio;
+using RobotManager.Input;
 
 namespace RobotManager
 {
@@ -31,7 +32,38 @@ namespace RobotManager
             I2cConnectionSettings bmp180Setting = new(1, Bmp180.DefaultI2cAddress);
             DeviceRegister.Bmp180 = new Bmp180(I2cDevice.Create(bmp180Setting));
 
-            DeviceRegister.Light = new(26,PinNumberingScheme.Logical);
+            DeviceRegister.Light = new(4,PinNumberingScheme.Logical);
+
+            DeviceRegister.Sensors.Add("HCSR04", new HCSR04(23,24, PinNumberingScheme.Logical));
+
+            string dll_dir = System.AppDomain.CurrentDomain.BaseDirectory + @"\plugins";
+            foreach (string dll in System.IO.Directory.GetFiles(dll_dir, "*.dll"))
+            {
+                //load Assemblys
+                var asm = System.Reflection.Assembly.LoadFrom(dll);
+
+                foreach (Type type in asm.GetTypes())
+                {
+                    try
+                    {
+                    //Check inheritance
+                        if (!(type is HardwareInterface)) continue;
+
+                        //Check weather interface
+                        if (type.IsInterface == true) continue;
+
+                        //Register Sensor
+                        DeviceRegister.Sensors.Add(
+                            System.IO.Path.GetFileNameWithoutExtension(dll),
+                            (HardwareInterface)Activator.CreateInstance(type)
+                            );
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+                }
+            }
         }
 
         public override async Task OnDisconnectedAsync(Exception? exception)
@@ -83,9 +115,15 @@ namespace RobotManager
         {
             DeviceRegister.Light.Turn(pinValue);
         }
+        
         public async Task Lighting()
         {
             DeviceRegister.Light.Turn();
+        }
+
+        public async Task<DetaContainer> ReadSensor(string sensorName)
+        {
+            return await DeviceRegister.Sensors[sensorName].ReadAsync();
         }
     }
 }

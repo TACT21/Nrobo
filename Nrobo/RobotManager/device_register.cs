@@ -48,7 +48,7 @@ namespace RobotManager
             }
         }
 
-        public static Dictionary<string, SensorInterface> Sensors { set; get; } = new();
+        public static SortedDictionary<string, HardwareInterface> Sensors { set; get; } = new();
 
         private static Led? light;
         public static Led? Light
